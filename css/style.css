@@ -253,6 +253,15 @@ section.slider .container {
     border: 0px solid #000000;
 }
 
+.container article a:hover {
+    background: #20A28C;
+    -webkit-transition: background 0.5s ease;
+    -moz-transition: background 0.5s ease;
+    -ms-transition: background 0.5s ease;
+    -o-transition: background 0.5s ease;
+    transition: background 0.5s ease;
+}
+
 .slider .container div:before{
     content: "＜";
     color: #24BA9F;
@@ -578,9 +587,9 @@ sup {
 .formRight {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 600px;
     padding: 40px;
+    margin-left: 20px;
 
 }
 
@@ -639,15 +648,21 @@ sup {
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .formCheckbox input:checked + label:after {
-   opacity: 1;
+    opacity: 1;
+
 }
 
 .formBtn {
     background: #27C7AB;
-    width: 360px;
+    width: 100%;
     height: 70px;
     text-transform: uppercase;
     display: flex;
@@ -660,11 +675,54 @@ sup {
     margin-top: 30px;
 }
 
+.formBtn:hover {
+    background: #20A28C;
+    -webkit-transition: background 0.5s ease;
+    -moz-transition: background 0.5s ease;
+    -ms-transition: background 0.5s ease;
+    -o-transition: background 0.5s ease;
+    transition: background 0.5s ease;
+}
+
 .formBtn a {
     text-decoration: none;
     color: #fff;
 }
 
+/*FOOTER ----------------------------------*/
 
+footer {
+    height: 100px;
+    margin-top: 50px;
+}
 
+footer .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #aaa;
+}
+
+.footerLeft {
+    display: block;
+    width: 65%;
+
+}
+.footerRight {
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerRight p {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.footerRight p span {
+    font-weight: bold;
+}
 
