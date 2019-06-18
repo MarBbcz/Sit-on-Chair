@@ -145,7 +145,7 @@ nav ul ul {
     left: 0;
     top: 40px;
     background: black;
-    padding: 17px 17px 17px 0;
+    padding: 11px 17px;
     display: none;
     -webkit-transition: all 1000ms ease;
     -moz-transition: all 1000ms ease;
@@ -164,15 +164,12 @@ nav ul ul:before {
     right: 65px;
 }
 
-nav ul > li:hover ul {
-    display: block;
-}
-
 nav ul ul li {
     list-style: none;
     text-transform: none;
     font-weight: lighter;
     line-height: 25px;
+    margin-left: 0;
 
 }
 header h1 {

@@ -1,3 +1,30 @@
+//Dropdown menu
+var liElements = document.querySelectorAll("nav>ul>li");
+
+
+for (let i = 0; i < liElements.length; i++) {
+    liElements[i].addEventListener("mouseover", function () {
+        var dropListElements = liElements[i].querySelector(":scope ul");
+        if (dropListElements != null) {
+            dropListElements.style.display = "block";
+        } else {
+            return null
+        }
+    })
+}
+
+for (let i = 0; i < liElements.length; i++) {
+    liElements[i].addEventListener("mouseout", function () {
+        var dropListElements = liElements[i].querySelector(":scope ul");
+        if (dropListElements != null) {
+            dropListElements.style.display = "none";
+        } else {
+            return null
+        }
+
+    })
+}
+
 //Slider
 
 var sliderPrev = document.querySelector(".sliderPrev");
@@ -6,7 +33,6 @@ var visImg = 0;
 
 var listElements = document.querySelectorAll(".sliderImg li");
 listElements[visImg].classList.add("visible");
-console.log(listElements[visImg]);
 
 
 sliderNext .addEventListener("click", function () {
