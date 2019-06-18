@@ -192,7 +192,7 @@ header h1 span{
 
 .slider {
     width: 100%;
-    height: 400px;
+    height: 450px;
     background: #f0f9ff; /* Old browsers */
     background: -moz-linear-gradient(top, #f0f9ff 0%, #ffffff 47%, #c4c4c4 79%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #f0f9ff 0%,#ffffff 47%,#c4c4c4 79%); /* Chrome10-25,Safari5.1-6 */
@@ -201,20 +201,27 @@ header h1 span{
 }
 
 section.slider .container {
-    height: 400px;
+    height: 450px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.slider .container article,
-.slider .container div{
+.slider .container article {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
     position: relative;
 }
+
+.sliderImg li{
+    display: none;
+}
+.sliderImg .visible {
+    display: inline-block;
+}
+
 .slider .container article {
     padding-right: 60px;
 
@@ -262,22 +269,23 @@ section.slider .container {
     transition: background 0.5s ease;
 }
 
-.slider .container div:before{
-    content: "＜";
-    color: #24BA9F;
-    font-size: 50px;
-    position: absolute;
-    top: 180px;
-    left: 0;
+.sliderPrev, .sliderNext {
+    color: #24BAA0;
+    margin: 205px 0;
+    font-size: 70px;
 }
-.slider .container article:after{
-    content: '＞';
-    color: #24BA9F;
-    font-size: 50px;
-    position: absolute;
-    top: 180px;
-    right: 0;
+.sliderPrev:hover,
+.sliderNext:hover {
+    color: #20A28C;
+    transform: scale(1.1);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
 }
+
 
 /*PRODUCTS-----------------------------------------------*/
 
