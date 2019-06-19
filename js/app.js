@@ -125,6 +125,7 @@ chairName.addEventListener("click", function () {
 
             sumChairPrice =+ parseInt(this.dataset.chairPrice);
             sum.innerHTML = sumChairPrice + sumColorPrice + sumFabricPrice + sumTransportPrice;
+            this.parentElement.classList.remove("optionSelected");
 
         })
     }
@@ -145,7 +146,7 @@ chairColor.addEventListener("click", function () {
 
             sumColorPrice = sumColorPrice + parseInt(this.dataset.colorPrice);
             sum.innerHTML = sumChairPrice + sumColorPrice + sumFabricPrice + sumTransportPrice;
-
+            this.parentElement.classList.remove("optionSelected");
         })
     }
 });
@@ -164,15 +165,13 @@ chairFabric.addEventListener("click", function () {
 
             sumFabricPrice = sumFabricPrice + parseInt(this.dataset.fabricPrice);
             sum.innerHTML = sumChairPrice + sumColorPrice + sumFabricPrice + sumTransportPrice;
+            this.parentElement.classList.remove("optionSelected");
         })
     }
 
 });
 
 checkbox.addEventListener("click", function () {
-    chairColor.nextElementSibling.classList.remove("optionSelected");
-    chairName.nextElementSibling.classList.remove("optionSelected");
-    chairFabric.nextElementSibling.classList.remove("optionSelected");
 
     if (checkboxInput.checked) {
         selectedTransport.innerText = "Transport";
