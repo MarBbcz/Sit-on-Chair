@@ -274,6 +274,7 @@ section.slider .container {
 .sliderPrev:hover,
 .sliderNext:hover {
     color: #20A28C;
+    cursor: pointer;
     transform: scale(1.1);
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -296,10 +297,12 @@ section.slider .container {
     width: 310px;
     border: 1px solid #DADADA;
 }
-.products .container .box1 {
+
+.box1 {
     background-image: url('./../images/box1_img.jpg');
 }
-.products .container .box2 {
+
+.box2 {
     background-image: url('./../images/box2_img.jpg')
 }
 .products .container div p {
@@ -502,6 +505,26 @@ sup {
     cursor: pointer;
 }
 
+.priceBtn:hover {
+    background: #20A28C;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.plans:nth-of-type(2) .priceBtn:hover {
+    background: #E4E4E4;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
 .priceBtn a {
     text-decoration: none;
     color: #fff;
@@ -660,6 +683,17 @@ sup {
     border-radius: 8px;
     text-decoration: none;
 }
+
+.green_button:hover {
+    background-color: #20A28C;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
 .panel_left {
     display: inline-block;
     width: 185px;
